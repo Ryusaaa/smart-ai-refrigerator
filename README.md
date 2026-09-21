@@ -384,7 +384,7 @@ Agar tidak menimbulkan salah paham, berikut hal yang **belum** nyata di prototyp
 
 ## 🙌 Kredit
 
-Dibuat oleh **Satria Ibnu Safarudin** sebagai **Tugas Individu Design Thinking**.
+Dibuat oleh **Satria Ibnu Safarudin** sebagai **Tugas Individu Design Thinking dari Program Pelatihan BBPVP Bandung**.
 
 <div align="center">
 

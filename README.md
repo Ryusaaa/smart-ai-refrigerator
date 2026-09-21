@@ -44,8 +44,8 @@ Repository ini berisi **prototype pada software layer**: aplikasi web (`frontend
 | **Bagaimana** alurnya bekerja | [Cara Kerja](#-cara-kerja) |
 | Teknologi yang dipakai | [Tech Stack](#-tech-stack) |
 | Cara menjalankan di komputer | [Menjalankan Secara Lokal](#-menjalankan-secara-lokal) |
-| Detail API dan konfigurasi backend | [`backend/README.md`](backend/README.md) |
-| Detail UI dan konfigurasi frontend | [`frontend/README.md`](frontend/README.md) |
+| Detail API dan konfigurasi backend | [`smart-ai-refrigerator-backend/README.md`](smart-ai-refrigerator-backend/README.md) |
+| Detail UI dan konfigurasi frontend | [`smart-ai-refrigerator-frontend/README.md`](smart-ai-refrigerator-frontend/README.md) |
 
 <img src="assets/divider.svg" alt="" width="100%">
 

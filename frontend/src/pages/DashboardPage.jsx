@@ -1,5 +1,4 @@
-// client/src/pages/DashboardPage.jsx
-// Complete responsive dashboard recreating the reference design (media_1789541774784.png)
+
 import React, { useEffect, useState } from 'react';
 import { dashboardApi } from '../services/dashboard.api';
 import RefrigeratorStatusCard from '../components/dashboard/RefrigeratorStatusCard';
@@ -80,7 +79,6 @@ export default function DashboardPage() {
 
   return (
     <div ref={containerRef} className="space-y-6 sm:space-y-7 pb-8">
-      {/* ── Header Row (Matching Reference Photo) ─────────────────────────── */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-1">
         <div>
           <h1 className="text-2xl sm:text-3xl font-bold font-serif text-[var(--color-text)] tracking-tight">
@@ -101,16 +99,12 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* ── Main 3-Column Grid Layout ────────────────────────────────────────── */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-6.5 items-start">
-        {/* ─── Column 1: Refrigerator Status + Temperature Trend ───────────── */}
-        <div className="space-y-6 flex flex-col">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+        <div className="space-y-6 flex flex-col min-w-0">
           <RefrigeratorStatusCard totalIngredients={totalIngredients} />
           <TemperatureTrendCard />
         </div>
-
-        {/* ─── Column 2: Inventory Overview + Recent Activity ───────────────── */}
-        <div className="space-y-6 flex flex-col">
+        <div className="space-y-6 flex flex-col min-w-0">
           <InventoryOverviewCard
             totalCount={totalIngredients}
             categories={categoryBreakdown}
@@ -118,15 +112,12 @@ export default function DashboardPage() {
           />
           <RecentActivityCard items={recentlyAdded} />
         </div>
-
-        {/* ─── Column 3: AI Assistant + Recommended Recipes ─────────────────── */}
-        <div className="space-y-6 flex flex-col">
+        <div className="space-y-6 flex flex-col min-w-0">
           <AIAssistantPanel />
           <RecommendedRecipesCard recipes={recipes} />
         </div>
       </div>
 
-      {/* ── Bottom Section: Reduce Food Waste Banner ────────────────────────── */}
       <div className="w-full">
         <ReduceWasteBanner expiringCount={expiringCount} />
       </div>
